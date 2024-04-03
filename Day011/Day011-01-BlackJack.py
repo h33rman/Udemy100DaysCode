@@ -95,7 +95,6 @@ while not is_game_over:
         if user_should_deal == 'y':
             user_cards.append(deal_card())
             user_score = calculate_score(user_cards)
-            print(f"Your cards: {user_cards}, current score: {user_score}")
         else:
             is_game_over = True
 

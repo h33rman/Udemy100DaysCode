@@ -3,45 +3,44 @@ You are going to write a program that adds to a travel_log. You can see a travel
 
 Write a function that will work with the following line of code on line 21 to add the entry for Brazil to the travel_log.
 
-add_new_country("Brazil", 5, ["Sao Paulo", "Rio de Janeiro"])
+add_new_country("Brazil", 5, ["São Paulo", "Rio de Janeiro"])
 DO NOT modify the travel_log directly. The goal is to create a function that modifies it.
 
 Example Input
 Brazil
 5
-["Sao Paulo", "Rio de Janeiro"]
+["São Paulo", "Rio de Janeiro"]
 Example Output
 I've been to Brazil 5 times.
-My favourite city was Sao Paulo.
+My favourite city was São Paulo.
 """
-country = input("Country") 
-visits = int(input("Number of visits")) 
+country = input("Country")
+visits = int(input("Number of visits"))
 list_of_cities = eval(input("List of cities"))
 
 travel_log = [
-  {
-    "country": "France",
-    "visits": 12,
-    "cities": ["Paris", "Lille", "Dijon"]
-  },
-  {
-    "country": "Germany",
-    "visits": 5,
-    "cities": ["Berlin", "Hamburg", "Stuttgart"]
-  },
+    {
+        "country": "France",
+        "visits": 12,
+        "cities": ["Paris", "Lille", "Dijon"]
+    },
+    {
+        "country": "Germany",
+        "visits": 5,
+        "cities": ["Berlin", "Hamburg", "Stuttgart"]
+    },
 ]
+
+
 # Do NOT change the code above 👆
 
 # TODO: Write the function that will allow new countries
 # to be added to the travel_log. 
 def add_new_country(country_names, times_visited, cities_visited):
-    new_country = {}
-    
-    new_country["country"] = country_names
-    new_country["visits"] = times_visited
-    new_country["cities"] = cities_visited
+    new_country = {"country": country_names, "visits": times_visited, "cities": cities_visited}
 
     travel_log.append(new_country)
+
 
 # Do not change the code below 👇
 add_new_country(country, visits, list_of_cities)

@@ -95,7 +95,7 @@ def make_coffee(drink_name, order_ingredients):
 
 is_on = True
 while is_on:
-    #  Prompt user by asking "What would you like? (espresso/latte/cappuccino): "
+    #  Prompt user by asking, "What would you like? (espresso/latte/cappuccino): "
     user_choice = input("What would you like? (espresso/latte/cappuccino)? \n"
                         "Type 'off' to exit, or 'reports' to make a report \n").lower()
     # Turn off the coffee machine by entering "off" to the prompt
